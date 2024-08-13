@@ -231,9 +231,6 @@ span{
     21%, 40%{
         content: "Developer";
     }
-    41%, 60%{
-        content: "";
-    }
 }
 
 @media (max-width: 1000px){
