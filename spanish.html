@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-  <style>
-  .social-icons {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .social-icon {
-    font-size: 18px;
-    padding: 15px 25px;
-    flex: 1;
-  }
-</style>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +20,6 @@
       <h3 class="typing-text">Soy un <span></span></h3>
       <p></p>
       <button onclick="cambiarAEspañol()" class="btn">Ver en ingles</button>
-    </div>
-  </section>
-  <script>
       <button onclick="checkPassword()" class="btn">Wind</button>
       <div id="windContent" style="display: none;">
         <h1>Lee esto, por favor.</h1>
@@ -47,7 +32,9 @@
           <i class="fab fa-discord fa-2x"></i>
         </a>
       </div>
-
+    </div>
+  </section>
+  <script>
     function cambiarAEspañol() {
       window.location.href = "index.html";
     }
