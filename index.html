@@ -8,11 +8,7 @@
   <title>Portfolio Website</title>
   <script>
     function changeToSpanish() {
-      document.documentElement.lang = "es"; // Change language attribute for entire document
-      document.title = "Sitio web de portafolio"; // Change title
-      document.querySelector("h1 span").textContent = "Tundra"; // Update name
-      document.querySelector("h3 span").textContent = ""; // Update profession (optional)
-      document.querySelector(".btn").textContent = "¡Botón de prueba! :0"; // Update button text
+      window.location.href = "spanish.html"; // Redirect to spanish.html
     }
   </script>
 </head>
@@ -29,7 +25,8 @@
       <h3 class="typing-text">I'm a <span></span></h3>
       <p></p>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Test button! :0</a>
-      <button onclick="changeToSpanish()">Ver en Español</button>  </div>
+      <button onclick="changeToSpanish()">See in Spanish</button>
+    </div>
   </section>
 </body>
 </html>
