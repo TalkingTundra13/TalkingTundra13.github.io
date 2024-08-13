@@ -26,28 +26,13 @@
       <p></p>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Test button! :0</a>
       <button onclick="changeToSpanish()" class="btn">See in Spanish</button>
-     <div class="social-icons">
-  <a href="https://discord.com/users/thisuseristundra" target="_blank" class="social-icon">
-    <span>My Discord</span>
-    <i class="fab fa-discord fa-2x"></i>
-  </a>
-</div>
-
-<style>
-.social-icon {
-  font-size: 20px;
-  width: 150px;
-  height: 50px;
-  padding: 10px 20px;
-  background-color: #36393F; /* Color de fondo del botón */
-  color: #fff; /* Color del texto y del icono */
-  border-radius: 5px;
-  text-decoration: none;
-}
-</style>
-
+      <div class="social-icons">
+        <a href="https://discord.com/users/thisuseristundra" target="_blank" class="social-icon">
+          <span>My Discord</span>
+          <i class="fab fa-discord fa-2x"></i>
         </a>
       </div>
+
     </div>
   </section>
 </body>
@@ -66,4 +51,16 @@
     });
   });
 </script>
+
+<style>
+  .social-icons {
+    display: flex; /* Apply flexbox to the container */
+    justify-content: space-between; /* Distribute buttons evenly */
+  }
+
+  .social-icon {
+    font-size: 20px;
+    /* Other styles for the button */
+  }
+</style>
 </html>
