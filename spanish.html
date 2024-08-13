@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es"> <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>ttundra13</title>
-  <script>
-    function changeToEnglish() {
-      window.location.href = "index.html"; // Redirect to index.html
+  <title>ttundra13</title> <script>
+    function cambiarAEspañol() { // Changed function name to Spanish
+      window.location.href = "spanish.html"; // Redirect to spanish.html
     }
   </script>
 </head>
@@ -21,12 +19,44 @@
       <img src="main.jpg" alt="">
     </div>
     <div class="home-content">
-      <h1>Hola, soy <span>Tundra</span></h1>
-      <h3 class="typing-text">Soy un <span></span></h3>
-      <p></p>
+      <h1>¡Hola, soy <span>Tundra</span>!</h1> <h3 class="typing-text">Soy un/a <span></span></h3> <p></p>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">¡Botón de prueba! :0</a>
-      <button onclick="changeToEnglish()" class="btn">Ver en Inglés</button>
+      <button onclick="cambiarAEspañol()" class="btn">Ver en español</button>
+      <div class="social-icons">
+        <a href="" target="_blank" class="social-icon">
+          <span>Mi Discord</span>
+          <i class="fab fa-discord fa-2x"></i>
+        </a>
+      </div>
+
     </div>
   </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  // Select the Discord icon element
+  const discordLink = document.querySelector('.social-icon');
+
+  // Add click event listener to the icon
+  discordLink.addEventListener('click', () => {
+    Swal.fire({
+      title: '¡Mi perfil de Discord!', /* Changed title to Spanish */
+      text: 'Mi nombre de usuario es: thisuseristundra', // Update with your username
+      icon: 'info',
+      confirmButtonText: '¡Genial!' /* Changed button text to Spanish */
+    });
+  });
+</script>
+
+<style>
+  .social-icons {
+    display: flex; /* Apply flexbox to the container */
+    justify-content: space-between; /* Distribute buttons evenly */
+  }
+
+  .social-icon {
+    font-size: 20px;
+    /* Other styles for the button */
+  }
+</style>
 </html>
