@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Sitio web de portafolio</title>
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">Tundra</a>
-    </header>
-    <section class="home">
-      <div class="home-img">
-        <img src="main.jpg" alt="">
-      </div>
-      <div class="home-content">
-        <h1>Hola, soy <span>Tundra</span></h1>
-        <h3 class="typing-text">Soy un <span></span></h3>
-        <p></p>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">¡Botón de prueba! :0</a>
-      </div>
-    </section>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio Website</title>
+  <script>
+    function changeToSpanish() {
+      document.documentElement.lang = "es"; // Change language attribute for entire document
+      document.title = "Sitio web de portafolio"; // Change title
+      document.querySelector("h1 span").textContent = "Tundra"; // Update name
+      document.querySelector("h3 span").textContent = ""; // Update profession (optional)
+      document.querySelector(".btn").textContent = "¡Botón de prueba! :0"; // Update button text
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Tundra</a>
+  </header>
+  <section class="home">
+    <div class="home-img">
+      <img src="main.jpg" alt="">
+    </div>
+    <div class="home-content">
+      <h1>Hi, It's <span>Tundra</span></h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p></p>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Test button! :0</a>
+      <button onclick="changeToSpanish()">Ver en Español</button>  </div>
+  </section>
+</body>
 </html>
