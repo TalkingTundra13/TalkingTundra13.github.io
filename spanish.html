@@ -33,6 +33,10 @@
       <p></p>
       <button onclick="cambiarAEspañol()" class="btn">Ver en ingles</button>
       <button onclick="checkPassword()" class="btn">Wind</button>
+      <div id="windContent" style="display: none;">
+        <h1>¡Bienvenido a Wind!</h1>
+        <p>Este es el contenido protegido.</p>
+      </div>
       <div class="social-icons">
         <a target="_blank" class="social-icon">
           <span>Mi Discord</span>
@@ -52,7 +56,7 @@
 
       if (password === correctPassword) {
         alert("¡Bienvenido! Accediendo a Wind...");
-        window.location.href = "wind.html";
+        document.getElementById("windContent").style.display = "block";
       } else {
         alert("Contraseña incorrecta. Intenta nuevamente.");
       }
