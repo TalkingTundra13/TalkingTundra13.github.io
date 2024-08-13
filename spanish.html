@@ -12,6 +12,36 @@
     flex: 1;
   }
 </style>
+  <head>
+    </head>
+  <body>
+    <div class="social-icons">
+      <a target="_blank" class="social-icon">
+        <span>Mi Discord</span>
+        <i class="fab fa-discord fa-2x"></i>
+      </a>
+      <button class="btn" id="windButton">Wind</button>
+    </div>
+
+    <script>
+      const windButton = document.getElementById('windButton');
+
+      windButton.addEventListener('click', function () {
+        const password = prompt("Ingrese la contraseña:");
+
+        if (password === "evansitoelmaspro24") {
+          // Contraseña correcta, realiza la acción deseada
+          alert("¡Contraseña correcta! Accediendo a Wind...");
+          // Ejemplo: redirigir a otra página
+          // window.location.href = "wind.html";
+        } else {
+          alert("Contraseña incorrecta.");
+        }
+      });
+    </script>
+  </body>
+</html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
