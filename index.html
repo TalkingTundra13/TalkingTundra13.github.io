@@ -29,6 +29,20 @@
     </div>
   </section>
 </body>
+  <script>
+  // Select the Discord icon element
+  const discordLink = document.querySelector('.social-icon');
+
+  // Add click event listener to the icon
+  discordLink.addEventListener('click', () => {
+    Swal.fire({
+      title: 'My Discord Profile!', // Change the title if desired
+      text: 'My username is: thisuseristundra', // Update with your username
+      icon: 'info',
+      confirmButtonText: 'Cool!'
+    });
+  });
+</script>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="discord.js"></script>
