@@ -15,8 +15,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css"> <title>ttundra13</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">   
+  
+
+  <link rel="stylesheet" href="style.css">
+  <title>ttundra13</title>
   <script>
     function cambiarAEspañol() {
       window.location.href = "index.html"; // Redirigir a index.html
@@ -37,29 +40,29 @@
       <p></p>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">¡Botón de prueba! :0</a>
       <button onclick="cambiarAEspañol()" class="btn">Ver en ingles</button>
+      <button onclick="checkPassword()" class="btn">Wind</button>
       <div class="social-icons">
         <a target="_blank" class="social-icon">
           <span>Mi Discord</span>
           <i class="fab fa-discord fa-2x"></i>
         </a>
       </div>
-
     </div>
   </section>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-  // Seleccionar el elemento del icono de Discord
-  const discordLink = document.querySelector('.social-icon');
+  <script>
+    function checkPassword() {
+      const password = prompt("Ingrese la contraseña:");
+      const correctPassword = "evansitoelmaspro24";
 
-  // Agregar escuchador de eventos clic al icono
-  discordLink.addEventListener('click', () => {
-    Swal.fire({
-      title: '¡Mi perfil de Discord!', // Cambiar el título si lo desea
-      text: 'Mi nombre de usuario es: thisuseristundra', // Actualizar con su nombre de usuario
-      icon: 'info',
-      confirmButtonText: '¡Genial!' // Cambiar el texto del botón
-    });
-  });
-</script>
+      if (password === correctPassword) {
+        // Contraseña correcta, realiza la acción deseada
+        alert("¡Contraseña correcta! Accediendo a Wind...");
+        // Ejemplo: redirigir a otra página
+        // window.location.href = "wind.html";
+      } else {
+        alert("Contraseña incorrecta.");
+      }
+    }
+  </script>
+</body>
 </html>
